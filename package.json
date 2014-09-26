@@ -1,0 +1,30 @@
+{
+  "name": "keyval",
+  "version": "0.0.1",
+  "description": "Key value store with a REST API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yunong/keyval.git"
+  },
+  "dependencies": {
+    "assert-plus": "0.1.5",
+    "restify": "2.8.2",
+    "bunyan": "1.1.0",
+    "cassandra-client": "0.15.2",
+    "vasync": "1.6.1",
+    "verror": "1.4.0"
+  },
+  "devDependencies": {
+    "nodeunit": "*"
+  },
+  "author": "Yunong Xiao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yunong/keyval/issues"
+  },
+  "homepage": "https://github.com/yunong/keyval"
+}
