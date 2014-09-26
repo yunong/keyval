@@ -15,11 +15,14 @@
     "restify": "2.8.2",
     "bunyan": "1.1.0",
     "cassandra-client": "0.15.2",
+    "cassandra-driver": "1.0.0-beta1",
+    "jsonfile": "2.0.0",
     "vasync": "1.6.1",
     "verror": "1.4.0"
   },
   "devDependencies": {
-    "nodeunit": "*"
+    "nodeunit": "git://github.com/yunong/nodeunit.git#4b1bf5e52941b72cf619a246f87b261da95a1231",
+    "underscore": "1.7.0"
   },
   "author": "Yunong Xiao",
   "license": "MIT",
