@@ -2,16 +2,15 @@ var mod_bunyan = require('bunyan');
 var mod_restify = require('restify');
 
 var mod_api = require('./lib/api');
-var log = mod_bunyan.createLogger({
-    name: 'keyval',
-    level: 'info',
-    src: process.env.LOG_DEBUG,
-    serializers: mod_bunyan.stdSerializers
-});
 
 var server = mod_restify.createServer({
     name: 'keyval',
-    log: log,
+    log: mod_bunyan.createLogger({
+        name: 'keyval',
+        level: 'info',
+        src: process.env.LOG_DEBUG,
+        serializers: mod_bunyan.stdSerializers
+    }),
     version: '1.0.0'
 });
 
