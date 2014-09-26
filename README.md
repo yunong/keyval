@@ -15,25 +15,25 @@ DELETE /keys/:name
 
 ## Listing all keys
 ```bash
-curl lgwd-yunong:1337/keys
+bash-3.2$ curl lgwd-yunong:1337/keys
 {"asdfasdfadsf":"bar","cars":"yunong","asdfdf":"bar","foo":"bar","caradadsfadsf":"yunong","asdf":"bar","mr":"foo"
 ```
 
 ## Putting a key
 ```bash
-curl 'lgwd-yunong:1337/keys/o?value=yunong' -X PUT
+bash-3.2$ curl 'lgwd-yunong:1337/keys/o?value=yunong' -X PUT
 ```
 
 ## Getting a key
 
 ```bash
-curl -H 'Accept: application/json' lgwd-yunong:1337/keys/o
+bash-3.2$ curl -H 'Accept: application/json' lgwd-yunong:1337/keys/o
 "yunong"
 ```
 
 ## Delete a key
 
 ```bash
-curl lgwd-yunong:1337/keys/o -X DELETE
+bash-3.2$ curl lgwd-yunong:1337/keys/o -X DELETE
 ```
 
